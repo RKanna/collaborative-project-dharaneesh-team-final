@@ -21,17 +21,18 @@
     <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon" />
   </head>
   <body>
-    <nav class="nav-bar-section">
+    <nav class="nav-bar-section" id="navBar">
       <div class="logo-section">
         <div class="menu-container">
           <img src="./icons/menu.svg" alt="menu-btn" class="menu" />
-          <img src="./icons/logo.svg" alt="logo-trip-adviset" class="logo" />
+          <img src="./icons/logo.svg" alt="logo-trip-finder" class="logo" />
         </div>
       </div>
       <div class="search-section">
-        <input type="text" class="searchBar" />
+        <input type="text" class="searchBar" placeholder="Search..." />
         <button class="magnify-container">
-          <img src="./icons/search.svg" alt="search-magnify" class="magnify" />
+            <img src="./icons/search.svg" alt="search-magnify" class="magnify" />
+          
         </button>
       </div>
       <div class="btn-section">
@@ -41,6 +42,7 @@
     <section class="hero-section">
       <div class="hero-box">
         <div class="person-img-container">
+          <div class="media-container">
           <div class="photo-container">
             <img src="./images/11.webp" alt="photo" class="photo" />
           </div>
@@ -64,7 +66,8 @@
             </a>
           </div>
         </div>
-        <div class="hero-img-container">
+        </div>
+        <div class="hero-img-container" id="touch-container">
           <img
             src="./images/cover-image.webp"
             alt="cover-image"
@@ -112,12 +115,14 @@
           </div>
           <div class="rating-class">
             <p class="last-line-content"><span class="bold-set">$260</span><span class="text_two"> avg/day</span></p>
-          
-            <img src="./icons/star.svg" alt="star" class="star">
-            <img src="./icons/star.svg" alt="star" class="star-two">
-            <img src="./icons/star.svg" alt="star" class="star-three">
-            <img src="./icons/star.svg" alt="star" class="star-four">
-            <img src="./icons/star.svg" alt="star" class="star-five">
+          <div class="star-rating" id="star-rating">
+            <img src="./icons/star.svg" alt="star" class="star-js star">
+            <img src="./icons/star.svg" alt="star" class="star-js star-two">
+            <img src="./icons/star.svg" alt="star" class="star-js star-three">
+            <img src="./icons/star.svg" alt="star" class="star-js star-four">
+            <img src="./icons/star.svg" alt="star" class="star-js star-five">
+          </div>
+            
           
             <span class="change-to-inline">(12)</span>
              
@@ -137,12 +142,15 @@
           </div>
           <div class="rating-class">
             <p class="last-line-content"><span class="bold-set">$230</span><span class="text_two"> avg/day</span></p>
+            <div class="star-rating" id="star-rating">
+              <img src="./icons/star.svg" alt="star" class="star-js star">
+              <img src="./icons/star.svg" alt="star" class="star-js star-two">
+              <img src="./icons/star.svg" alt="star" class="star-js star-three">
+              <img src="./icons/star.svg" alt="star" class="star-js star-four">
+              <img src="./icons/star.svg" alt="star" class="star-js star-five">
 
-            <img src="./icons/star.svg" alt="star" class="star">
-            <img src="./icons/star.svg" alt="star" class="star-two">
-            <img src="./icons/star.svg" alt="star" class="star-three">
-            <img src="./icons/star.svg" alt="star" class="star-four">
-            <img src="./icons/star.svg" alt="star" class="star-five">
+            </div>
+            
           
             <span class="change-to-inline">(11)</span>
           </div>
@@ -199,10 +207,10 @@
         <div class="one img-level-container">
           <img src="./icons/heart-outline.svg" alt="heart" class="heart">
           <img src="./next-arrow.png" alt="Arrow" class="arrow">
-          <img src="./images/1st-row-4th-set/boat-one.webp" alt="boat" class="boats boat-rad"/>
-          
+          <!-- <img src="./images/1st-row-4th-set/boat-one.webp" alt="boat" class="boats boat-rad"/> -->
+          <img src="./download2.png" alt="boat" class="boats boat-rad"/>
           <div class="content-for-img">
-            <p><b>3-8 hours . No Captain</b></p>
+            <p><b>3 - 8 hours . No Captain</b></p>
             <p>Harbor Haven for Lake Union cruising.</p>
             <span class="text_one">Ko Samui, Thailand</span>
           </div>
@@ -263,7 +271,7 @@
         <div class="four img-level-container">
           <img src="./icons/heart-outline.svg" alt="heart" class="heart">
           <img src="./next-arrow.png" alt="Arrow" class="arrow">
-          <img src="./images/1st-row-1st-set/boat-two.webp" alt="boat" class="boats boat-rad" />
+          <img src="./download.png" alt="boat" class="boats boat-rad" />
           <div class="content-for-img">
             <p><b>2 - 7 hours . Captain</b></p>
             <p>Coastal Cruisers Lake Union cruising.</p>
