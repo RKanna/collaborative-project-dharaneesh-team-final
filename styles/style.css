@@ -31,19 +31,21 @@ body {
   align-items: center;
 }
 .nav-bar-section {
-  min-width: 100vh;
-  height: 5.5rem;
+  min-width: 100%;
+  height: 6rem;
   /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   border-bottom: 2px solid #dcdddc;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
 }
 .logo-section {
   width: 33.33%;
   height: 5rem;
-  /* background-color: yellow; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -57,14 +59,15 @@ body {
 }
 .menu {
   width: 8%;
+  cursor: pointer;
 }
 .logo {
   width: 33%;
+  cursor: pointer;
 }
 .search-section {
   width: 33.33%;
   height: 5rem;
-  /* background-color: red; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -77,27 +80,38 @@ body {
   padding: 1rem;
   width: 100%;
   border-radius: 3rem;
-  border: 3px solid #dcdddc;
+  border: 2px solid #dcdddc;
   outline: none;
 }
-/* .magnify-container {
-  border-radius: 50%;
- 
-} */
-.magnify {
+.searchBar::placeholder {
+  color: #4a5463;
+  font-weight: 700;
+}
+
+.searchBar:focus {
+  border: 2px solid black;
+}
+.magnify-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #111827;
+  right: 1.5rem;
   position: absolute;
-  top: 35%;
-  left: 85%;
-  width: 5%;
-  color: white;
-  background-color: gray;
   border-radius: 50%;
   cursor: pointer;
+  border: transparent;
+}
+.magnify-container:hover {
+  background-color: black;
+}
+.magnify {
+  width: 1.2rem;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 .btn-section {
   width: 33.33%;
   height: 5rem;
-  /* background-color: green; */
   display: flex;
   justify-content: end;
   align-items: center;
@@ -109,15 +123,18 @@ body {
   border-radius: 0.5rem;
   border: transparent;
   color: white;
-  background-color: black;
+  background-color: #111827;
   cursor: pointer;
 }
+.login:hover {
+  background-color: black;
+}
 .hero-section {
+  padding-top: 10rem;
   /* width: 100%; */
   min-width: 100vh;
   height: 32rem;
   /* height: auto; */
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,13 +155,11 @@ body {
 }
 .person-img-container {
   width: 50%;
-  /* background-color: yellow; */
   padding: 2rem;
 }
 .person-content-container {
 }
 .hero-img-container {
-  /* width: 100%; */
   min-width: 100vh;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -187,6 +202,7 @@ h1 {
   font-weight: 700;
 }
 .intermediate-division-section {
+  margin-top: 5rem;
   width: 100%;
   height: 6rem;
   /* background-color: aqua; */
@@ -328,6 +344,12 @@ li {
   left: 14rem;
   /* margin-top: 1rem;
   width: 1rem; */
+  -webkit-filter: invert(50%);
+  filter: invert(50%);
+}
+.filled {
+  -webkit-filter: invert(10%);
+  filter: invert(10%);
 }
 .rating-class {
   display: flex;
@@ -428,19 +450,7 @@ a {
   text-decoration: none;
   color: black;
 }
-@media (max-width: 768px) {
-  .three_set > div {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
 
-@media (max-width: 480px) {
-  .three_set > div {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
 .redQ {
   cursor: pointer;
 }
@@ -461,4 +471,83 @@ a {
 }
 .img-level-container:hover .arrow {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .three_set > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .hero-box {
+    width: 10rem;
+    flex-direction: column;
+    background: url(/images/cover-image.webp);
+    margin: auto;
+    /* margin-left: 5rem; */
+  }
+  .hero-img-container {
+    margin: auto;
+  }
+  .person-img-container {
+    padding-top: 10rem;
+
+    width: 50%;
+    margin: auto;
+  }
+  .media-container {
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #dcdddc;
+    border-radius: 1rem;
+    box-shadow: var(--light-shadow);
+  }
+  .intermediate-division-section {
+    margin-top: 10rem;
+  }
+  .boat-section {
+    margin: auto;
+  }
+  .hero-section {
+    width: 50%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .link {
+    order: -1;
+  }
+  .three_set {
+    /* margin: auto; */
+    /* margin-left: 10rem; */
+  }
+  body {
+    margin: auto;
+  }
+  .menu {
+    width: 2rem;
+  }
+  .logo {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .three_set > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .menu {
+    width: 2rem;
+  }
+  .logo {
+    width: 8rem;
+  }
+  .media-container {
+    width: 20rem;
+  }
 }
