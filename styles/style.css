@@ -313,10 +313,10 @@ li {
 }
 .heart {
   position: absolute;
-  width: 7% !important;
+  width: 8% !important;
   /* top: -27%;
   left: 88%; */
-  left: 18rem;
+  left: 18.5rem;
   top: -6rem;
   -webkit-filter: invert(100%);
   filter: invert(100%);
