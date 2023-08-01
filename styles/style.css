@@ -214,48 +214,6 @@ h1 {
   height: 79rem;
   flex-wrap: wrap;
 }
-.boat-img-div {
-  margin: 2rem;
-  min-width: 100vh;
-  height: 77rem;
-  background-color: white;
-}
-
-.boat-img {
-  width: 22rem;
-  height: 23rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  cursor: pointer;
-}
-.setOne-img {
-  width: 100%;
-  position: relative;
-}
-
-.set-one-img {
-  width: 100%;
-  position: relative;
-}
-.ul-class {
-  display: flex;
-}
-li {
-  margin-left: 0rem;
-}
-.first-list {
-  list-style: none;
-  font-weight: 700;
-}
-.secondlist {
-  margin-left: 1.5rem;
-  font-weight: 700;
-}
-.img-description {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
 .rating-class {
   position: relative;
 }
